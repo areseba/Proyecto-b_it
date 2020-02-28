@@ -19,6 +19,7 @@ class Articulo(models.Model):
     marca_articulo=models.CharField(max_length=30)
     categoria_articulo=models.CharField(max_length=30)
     precio_articulo=models.IntegerField()
+    imagen_articulo=models.ImageField()
 
 class Pedido(models.Model):
     id_pedido=models.IntegerField()

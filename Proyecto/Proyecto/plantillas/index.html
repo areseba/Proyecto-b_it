@@ -1,12 +1,31 @@
 {% extends "base.html"%}
 
 {% block title %}
-Hola
+{% comment %} Aca va el titulo que se le quiera poner a la pag{% endcomment %}
+
 {% endblock %}
 
 
-{% block content %}
 
-asdasdasd
+{% block content %}
+{% comment %} Aca va todo el contenido qe la pagina de inicio {% endcomment %}
+
+
+{% comment %} A continuacion se carga la plantilla de busqueda de producto {% endcomment %}
+{% include "busqueda_producto.html" %}
+
+
+{% comment %} A continuacion se carga la plantilla de como funciona {% endcomment %}
+
+
+
+{% comment %} A continuacion se carga la plantilla de preguntas frecuentes {% endcomment %}
+{% include "preguntas_frecuentes.html" %}
+
+
+{% comment %} A continuacion se carga la plantilla de contacto {% endcomment %}
+{% include "contacto.html" %}
+
+
 {% endblock %}
 
