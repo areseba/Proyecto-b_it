@@ -14,4 +14,3 @@ def carrito(request):
 
 def busqueda_producto(request):
     return render(request, "busqueda_producto.html")
-
